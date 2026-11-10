@@ -9,6 +9,8 @@ def insert_patient(patient: Patient):
     print(patient.age)
     print("inserted")
 
-patient_info = {"patinet": "abdullah", "age": 26}
+patient_info = {"name": "abdullah", "age": 26}
 
 patient1 = Patient(**patient_info)
+
+insert_patient(patient1)
