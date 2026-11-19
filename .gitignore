@@ -1,4 +1,24 @@
-myenv
-__pycache__/
 fastApi_with_ml/__pycache__/
 fastApi_with_ml/myenv312
+
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+myenv/
+myenv312/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
