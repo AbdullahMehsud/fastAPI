@@ -42,23 +42,21 @@ class UserInput(BaseModel):
     @property
     def lifestyle_risk(self) -> str:
         if self.smoker and self.bmi > 30:
-            return "High"
+            return "high"
         elif self.smoker or self.bmi > 27:
-            return "Medium"
+            return "medium"
         else: 
-            return "Low"
+            return "low"
 
     @computed_field
     @property
     def age_group(self) -> str:
         if self.age < 25:
-            return "Young"
+            return "adult"
         elif self.age < 45:
-            return "Adult"
-        elif self.age < 60:
-            return "Middle-aged"
+            return "middle_aged"
         else:
-            return "Senior"
+            return "senior"
 
     @computed_field
     @property
